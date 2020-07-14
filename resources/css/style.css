@@ -1,0 +1,479 @@
+/*------------------------------------*/
+/*     BASIC SETUP       */
+/*------------------------------------*/
+
+*{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+body{
+     color: rgb(59, 59, 59);
+     font-family: "lato", Arial, Helvetica, sans-serif;
+     font-weight: 400;
+     font-size: 22px;
+     text-rendering: optimizeLegibility;
+     padding: 30px;
+}
+.clearfix{zoom: 1;}
+.clearfix:after {
+    content: ' . ';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*------------------------------------*/
+/*     REUSEABLE COMPONENTS / GLOBAL      */
+/*------------------------------------*/
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* SECTION*/
+section{
+    padding: 80px 0;
+}
+
+/*------------------------------------*/
+/*     HEADER COMPONENTS       */
+/*------------------------------------*/
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.753)) , url(../img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*  -----------LOGO---------*/
+}    
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin: 20px;
+}
+/*-------------NAVIGATION----------*/
+
+.nav-sign-up{
+    padding: 10px;
+    border: 2px solid #fff;
+}
+.main-nav{
+    list-style: none;
+    float: right;
+    margin-top: 55px;
+    
+}
+.main-nav li{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-right: 1px solid #e67622;
+    padding: 10px;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e67622;
+}
+
+/*-------- HEAD INGS--------*/
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+   
+}
+h1{
+    color: #fff;
+    font-size: 200%;
+    word-spacing: 4px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67622;
+    content: " ";
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/*---------PARAGRAPHS-----*/
+
+.long-copy{
+    line-height: 140%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 40px;
+}
+.box p{
+    font-size: 80%;
+    line-height: 140%;
+}
+/*------------------------------------*/
+/*     BUTTON COMPONENTS       */
+/*------------------------------------*/
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background-color 0.2s, color 0.2s, border 0.2s
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    border: 1px solid #e67622 ;
+    background-color: #e67622;
+    color: #fff;
+    margin-right: 10px;
+}
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67622;
+    color: #e67622;
+}
+.btn:hover,
+.btn:active,
+input[type=submit]:hover {
+    background-color: #b9601b;
+}
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover {
+    border: 1px solid #cf6717 ;
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    color: #fff;
+    border: 1px solid #cf6717;
+}
+
+/*------------FEATURES BOXES------*/
+.box{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 8px;
+}
+
+/*----------MEALS SHOWCASE---------*/
+
+
+/*-----section-------*/
+.section-meals{
+    padding: 0px;
+}
+
+/*-----MEALS-----*/
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-pic{
+    width: 100%;
+    overflow: hidden;
+  background-color: black;
+}
+.meal-pic img{
+    opacity: 0.65;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 1s,opacity 1s;
+}
+
+.meal-pic img:hover{
+   opacity: 1;
+   transform: scale(1.03)
+}
+
+/*------------HOW IT WORKS--------------*/
+.section-works{
+    background-color: rgb(218, 214, 214);
+}
+.box-phone,
+.box-steps{
+   
+    float: left;
+    width: 50%;
+}
+.box-phone{
+text-align: center;
+padding-right: 3%;
+margin-top: 30px; 
+}
+.box-steps{
+     padding-left: 3%;
+     margin-top: 70px;
+}
+.app-screen{
+    width: 40%;
+}
+.works-step{
+    margin-bottom: 50px;
+}
+.works-step :last-of-type{
+    margin-bottom: 60px;
+}
+.works-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 150%;
+    padding: 5px;
+    margin-right: 25px;
+    float: left;
+}
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/*------------SECTION CITIES--------*/
+
+.box-cities{
+    width: 25%;
+    float: left;
+    padding: 2%;
+
+}
+.lisbon,
+.san-francisco,
+.berlin,
+.london{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/*-----------SECTION-TESTIMONY---------*/
+.box-testimonial{
+    width: 33%;
+    float: left;
+}
+.section-testimonial{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.822)),
+    url(../img/back-customers.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 140%;
+    position: relative;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite{
+    display: block;
+    font-size: 90%;
+    margin-top: 25px;
+}
+
+cite img{
+    height: 80px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+/*-----------SECTION SIGN UP-----------*/
+.box-sign-up{
+    width: 33.33%;
+    float: left;
+}
+
+.section-sign-up{
+    background-color: rgb(218, 214, 214);
+}
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+   
+}
+.plan-box:hover{
+    box-shadow: 3px 3px 4px rgb(54, 35, 35);
+}
+.plan-box div{
+    padding: 27px;
+    border-bottom: 1px solid rgb(218, 214, 214);
+   
+}
+.plan-box div:first-child{
+    background-color: rgb(22, 12, 12);
+    color: rgb(229, 226, 226);
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border: none;
+}
+.plan-price{
+    font-size: 300%;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color:#e67e22 ;
+}
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+.plan-price-meal{
+font-size: 80%;
+}
+.plan-box ul{
+    list-style: none;
+}
+.plan-box li{
+    padding: 5px 0;
+}
+
+/*----------SECTION- CONTACT-FORM---------*/
+.div-form{
+ width: 50%;
+ float: left;
+ margin-bottom: 15px;
+}
+
+.contact-form{
+    width: 55%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+textarea{
+    height: 100px;
+}
+
+/*----------FOOTER--------*/
+
+footer{
+    background-color: rgb(22, 12, 12);
+    padding: 40px;
+    font-size: 80%;
+    
+}
+
+.box-footer{
+    width: 50%;
+    float: left;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+.footer_social-media{
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.footer_social-media li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.footer_social-media li a:link,
+.footer_social-media li a:visited {
+    text-decoration: none;
+    color: rgb(105, 103, 103);
+}
+
+.footer_social-media li a:link,
+.footer_social-media li a:visited{
+    font-size: 120%;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.footer_social-media li a:hover,
+.footer_social-media li a:active{
+    color: #ddd;
+}
+
+
+footer p{
+    color:rgb(105, 103, 103);
+    text-align: center;
+    margin-top: 35px;
+    
+}
